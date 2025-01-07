@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.text-of-about{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 800px;
+    justify-content: flex-start;
+}
+
+.mypic{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding-left: 50px;
+}
+
+.aboutt{
+width: 30%;
+height: auto;
+position:relative;
+left: 23%;
+    
+}
+
+.fix{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.text1 {
+    width: 700px;
+}
+
+.text2{
+    width: 320px;
+}
+
+.about-me{
+    display: flex; /* يجعل الحاوية تعمل بتقنية Flexbox */
+    justify-content: center; /* يحاذي كل العناصر أفقيًا في المنتصف */
+    align-items: center; /* إذا كنت تريد محاذاة العناصر عموديًا أيضًا */
+    width: 100%; /* عرض الحاوية 100% */
+    height: 100vh; 
+    padding-top: 30px;
+}
+
+
+.hamham{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+

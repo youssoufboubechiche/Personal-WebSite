@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+/* Styles globaux */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: jellee;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: scroll; /* التأكد من أن التمرير على المحور Y */
+  scroll-snap-type: y mandatory;
+}
+
+/* Barre de navigation */
+header {
+    margin: 0;
+    position: fixed; /* Reste en haut de la page */
+    top: 0;
+    left: 0;
+    width: 100%; /* Prend toute la largeur */
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 860px;
+    align-items: center;
+    padding: 30px 30px 30px 65px;
+    z-index: 10; /* Passe au-dessus des autres éléments */
+}
+
+header img {
+    height: 47px;
+    width: auto; /* Ajuste la taille du logo */
+}
+
+header nav{
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    gap: 57px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    transform: scale(1.2); /* Rendre le texte en gras */
+    color: #FF8400; /* Changer la couleur du texte en orange */
+}
+
+/* Section Hero */
+.hero {
+    background-image: url("./my\ assets/me 1 (1).jpg");
+    background-size: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; /* Prend toute la hauteur de l'écran */    
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    }
+
+.Youssouf {
+    font-size: 38.6px;
+}
+.UIUX {
+    font-size: 38.6px;
+}
+
+.me-letter{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 28px;
+}
+
+.me-letter img {
+    width: 150px;
+}
+
+.my-work {
+    width: 677px;
+    font-size: 16.58px;
+}
+
+.my-work-space {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 43.09px;
+}
+
+.my-work-space {
+    display: flex; /* استخدام flexbox */
+    justify-content: flex-end; /* لجعل العناصر تتراص على اليمين */
+    gap: 20px; /* مسافة بين الصور */
+    align-items: flex-end; /* محاذاة الصور والنصوص عموديًا */
+  }
+
+.highlite{
+    color: #FF8400;
+}
+
+.fix{
+    margin-left: 70px;
+}
+
+.img-container {
+    position: relative;
+    display: flex; /* وضع الصورة والنص في نفس الخط */
+    flex-direction: row;
+    align-items: center; /* محاذاة الصورة والنص عموديًا */
+    gap: 30px;
+  }
+  
+  .img-container img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+  }
+  
+  .img-container:hover img {
+    transform: scale(1.1); /* تأثير تكبير عند التمرير */
+  }
+  
+  .tooltip {
+    margin-left: 10px; /* مسافة صغيرة بين الصورة والنص */
+    background-color: rgb(255, 128, 0);
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    white-space: nowrap;
+    opacity: 0; /* النص مخفي افتراضياً */
+    transition: opacity 0.3s ease;
+  }
+  
+  .img-container:hover .tooltip {
+    opacity: 1; /* إظهار النص عند التمرير */
+  }
+
+  @font-face {
+    font-family: 'jellee';
+    src: url('./my assets/fonts/Jellee-Roman.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .hahouna{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 10px;
+  }
+
+  .highlite {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2rem;
+    background: linear-gradient(90deg,#ff5733 , #ffbd33, #ff5733 ,#ffbd33);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientMove 3s infinite linear;
+  }
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  section {
+    min-height: 100vh; /* ملء شاشة العرض لكل قسم */
+    scroll-snap-align: start; /* اصطفاف القسم عند بدء العرض */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* swiper  */
+
+body,html{
+  height: 100%;
+}
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+    

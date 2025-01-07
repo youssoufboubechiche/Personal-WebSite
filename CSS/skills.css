@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.desdev {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.desskil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+}
+
+.desskil div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 170px;
+}
+
+.myskills1{
+    margin-left: 10px;
+    margin-top: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.As{
+    font-size: 20px;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.figmalogo2{
+    width: 12%;
+    height: auto;
+}
+
+.momo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+}
+
+.devskil div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 170px;
+}
+
+.momo img {
+    width: 70px; /* تغيير العرض حسب الحاجة */
+    height: 70px; /* تغيير الارتفاع حسب الحاجة */
+    object-fit: contain; /* ضمان عدم تشويه الصور */
+    margin: 5px; /* مسافة صغيرة بين الصور */
+  }
+
+  .DesignSkillText, .DevSkillText {
+    cursor: pointer;
+    color: #ffffff62;
+}
+
+.DesignSkillText:hover, .DevSkillText:hover {
+    color: #ff7300; /* يغير لون النص عند التحويم */
+    text-decoration: underline; /* يضيف خطاً تحت النص */
+}
+

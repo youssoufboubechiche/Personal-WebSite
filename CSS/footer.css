@@ -1,0 +1,8 @@
+.footer {
+    text-align: center;
+    color: #ff7300aa; /* لون النص */
+    font-size: 14px; /* حجم الخط */
+    width: 100%; /* عرض كامل */
+    margin-top: auto; /* وضع الفوتر في الأسفل */
+    padding-bottom: 30px;
+  }
